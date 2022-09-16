@@ -1,7 +1,7 @@
 <h1>Projeto E-commerce FrontEnd</h1>
 
 
-Aplicação FrontEnd de cadastro de produtos de um ecommerce.
+Aplicação FrontEnd de cadastro de produtos de um e-commerce.
 
 ## Softwares e linguagens usados 💾
 Para executar o projeto, será necessário instalar os seguintes programas:
@@ -74,6 +74,7 @@ Se você precisar adicionar links extras relativos ao projeto em questão, esse 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+
 <table>
   <tr>
     <td align="center"><a href="https://github.com/marqvin"><img src="https://avatars.githubusercontent.com/u/58312849?s=400&u=a2e483841e34a267f6dd2f25ab3e6b9b019b368e&v=4" width="100px;" alt="Vinícius Marques"/><br /><sub><b>Vinícius Marques</b></sub></a><br />
@@ -90,8 +91,8 @@ Se você precisar adicionar links extras relativos ao projeto em questão, esse 
     </td>
     <td align="center"><a href="https://github.com/Jvrossi10"><img src="https://avatars.githubusercontent.com/u/99191311?v=4" width="100px;" alt="João Victor"/><br /><sub><b>João Victor</b></sub></a><br />
     </td>
-    
-    
+
+​    
   </tr>
 </table>
 </br>
