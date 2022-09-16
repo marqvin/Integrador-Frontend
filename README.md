@@ -1,7 +1,7 @@
-<h1>Projeto E-commerce BackEnd</h1>
+<h1>Projeto E-commerce FrontEnd</h1>
 
 
-Aplicação de cadastro de produtos de um ecommerce.
+Aplicação FrontEnd de cadastro de produtos de um ecommerce.
 
 ## Softwares e linguagens usados 💾
 Para executar o projeto, será necessário instalar os seguintes programas:
