@@ -5,6 +5,10 @@ Aplicação FrontEnd de cadastro de produtos de um e-commerce.
 
 ## Softwares e linguagens usados 💾
 Para executar o projeto, será necessário instalar os seguintes programas:
+Comece com:
+  No terminal do projeto
+
+    npm install
 
 <table>
   <span>
