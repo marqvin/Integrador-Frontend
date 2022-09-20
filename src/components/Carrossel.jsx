@@ -75,7 +75,7 @@ function Carrossel() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="https://img.freepik.com/fotos-gratis/foto-de-grande-angular-de-uma-unica-arvore-crescendo-sob-um-ceu-nublado-durante-um-por-do-sol-cercado-por-grama_181624-22807.jpg"
+                    src="https://avatars.githubusercontent.com/u/44385434?v=4"
                     alt="Jade"
                 />
                 <Carousel.Caption>
