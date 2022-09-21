@@ -25,7 +25,7 @@ function Management() {
                         <br />
                         <Button variant="primary" type="submit">
                             Salvar
-                        </Button>
+                        </Button>{' '}
                         <Button variant="primary" type="submit">
                             Apagar
                         </Button>
@@ -47,7 +47,7 @@ function Management() {
                         <br />
                         <Button variant="primary" type="submit">
                             Salvar
-                        </Button>
+                        </Button>{' '}
                         <Button variant="primary" type="submit">
                             Apagar
                         </Button>
@@ -73,7 +73,7 @@ function Management() {
                         <Form.Control type="text" placeholder="Adicionar código dos produtos" /><br />
                         <Button variant="primary" type="submit">
                             Salvar
-                        </Button>
+                        </Button>{' '}
                         <Button variant="primary" type="submit">
                             Apagar
                         </Button>
@@ -84,7 +84,7 @@ function Management() {
                         <Form.Control type="text" placeholder="Adicionar código do produto na categorias" /><br />
                         <Button variant="primary" type="submit">
                             Salvar
-                        </Button>
+                        </Button>{' '}
                         <Button variant="primary" type="submit">
                             Apagar
                         </Button>
