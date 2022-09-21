@@ -21,8 +21,8 @@ function App() {
         <Route path='/product' element={<Product />}/>
         <Route path='/shoppingcart' element={<ShoppingCart />}/>
       </Routes>
-    
     </>
+    
   )
 }
 
