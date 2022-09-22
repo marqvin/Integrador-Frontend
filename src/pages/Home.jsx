@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 function Home() {
     return (
         <>
-            <h1>Home</h1>
+            
             <div className="container w-50 p-6">
                 <div className="col-xs-3">
                     <Carousel>
