@@ -84,30 +84,6 @@ function Product() {
                             </Figure.Caption>
                         </Figure>
                     </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <Figure>
-                            <Figure.Image
-                                width={264.03}
-                                height={264.6}
-                                alt="171x180"
-                                src="https://st.depositphotos.com/2935381/4189/i/450/depositphotos_41897159-stock-photo-example-concept.jpg"
-                            />
-                            <Figure.Caption>
-                            <Row>
-                                <Col>
-                                    <h5>Kabum</h5>
-                                </Col>
-                                <Col>
-                                    ⭐⭐⭐⭐⭐
-                                </Col>
-                                </Row>
-                                <p>R$ X Bilhões</p>
-                                Nulla vitae elit libero, a pharetra augue mollis interdum.
-                            </Figure.Caption>
-                        </Figure>
-                    </Col>
                     <Col>
                         <Figure>
                             <Figure.Image
@@ -153,7 +129,7 @@ function Product() {
                         </Figure>
                     </Col>
                 </Row>
-                <Row>
+                <Row className="justify-content-md-center">
                     <Col>
                         <Figure>
                             <Figure.Image
@@ -223,30 +199,6 @@ function Product() {
                             </Figure.Caption>
                         </Figure>
                     </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <Figure>
-                            <Figure.Image
-                                width={264.03}
-                                height={264.6}
-                                alt="171x180"
-                                src="https://st.depositphotos.com/2935381/4189/i/450/depositphotos_41897159-stock-photo-example-concept.jpg"
-                            />
-                            <Figure.Caption>
-                            <Row>
-                                <Col>
-                                    <h5>Kabum</h5>
-                                </Col>
-                                <Col>
-                                    ⭐⭐⭐⭐⭐
-                                </Col>
-                                </Row>
-                                <p>R$ X Bilhões</p>
-                                Nulla vitae elit libero, a pharetra augue mollis interdum.
-                            </Figure.Caption>
-                        </Figure>
-                    </Col>
                     <Col>
                         <Figure>
                             <Figure.Image
@@ -292,6 +244,122 @@ function Product() {
                         </Figure>
                     </Col>
                 </Row>
+                <Row className="justify-content-md-center">
+                    <Col>
+                        <Figure>
+                            <Figure.Image
+                                width={264.03}
+                                height={264.6}
+                                alt="171x180"
+                                src="https://st.depositphotos.com/2935381/4189/i/450/depositphotos_41897159-stock-photo-example-concept.jpg"
+                            />
+                            <Figure.Caption>
+                                <Row>
+                                <Col>
+                                    <h5>Kabum</h5>
+                                </Col>
+                                <Col>
+                                    ⭐⭐⭐⭐⭐
+                                </Col>
+                                </Row>
+                                <p>R$ X Bilhões</p>
+                                
+
+                                Nulla vitae elit libero, a pharetra augue mollis interdum.
+                            </Figure.Caption>
+                        </Figure>
+                    </Col>
+                    <Col>
+                        <Figure>
+                            <Figure.Image
+                                width={264.03}
+                                height={264.6}
+                                alt="171x180"
+                                src="https://st.depositphotos.com/2935381/4189/i/450/depositphotos_41897159-stock-photo-example-concept.jpg"
+                            />
+                            <Figure.Caption>
+                            <Row>
+                                <Col>
+                                    <h5>Kabum</h5>
+                                </Col>
+                                <Col>
+                                    ⭐⭐⭐⭐⭐
+                                </Col>
+                                </Row>
+                                <p>R$ X Bilhões</p>
+                                Nulla vitae elit libero, a pharetra augue mollis interdum.
+                            
+                                </Figure.Caption>
+                        </Figure>
+                    </Col>
+                    <Col>
+                        <Figure>
+                            <Figure.Image
+                                width={264.03}
+                                height={264.6}
+                                alt="171x180"
+                                src="https://st.depositphotos.com/2935381/4189/i/450/depositphotos_41897159-stock-photo-example-concept.jpg"
+                            />
+                            <Figure.Caption>
+                            <Row>
+                                <Col>
+                                    <h5>Kabum</h5>
+                                </Col>
+                                <Col>
+                                    ⭐⭐⭐⭐⭐
+                                </Col>
+                                </Row>
+                                <p>R$ X Bilhões</p>
+                                Nulla vitae elit libero, a pharetra augue mollis interdum.
+                            </Figure.Caption>
+                        </Figure>
+                    </Col>
+                    <Col>
+                        <Figure>
+                            <Figure.Image
+                                width={264.03}
+                                height={264.6}
+                                alt="171x180"
+                                src="https://st.depositphotos.com/2935381/4189/i/450/depositphotos_41897159-stock-photo-example-concept.jpg"
+                            />
+                            <Figure.Caption>
+                            <Row>
+                                <Col>
+                                    <h5>Kabum</h5>
+                                </Col>
+                                <Col>
+                                    ⭐⭐⭐⭐⭐
+                                </Col>
+                                </Row>
+                                <p>R$ X Bilhões</p>
+                                Nulla vitae elit libero, a pharetra augue mollis interdum.
+                            </Figure.Caption>
+                        </Figure>
+                    </Col>
+                    <Col>
+                        <Figure>
+                            <Figure.Image
+                                width={264.03}
+                                height={264.6}
+                                alt="171x180"
+                                src="https://st.depositphotos.com/2935381/4189/i/450/depositphotos_41897159-stock-photo-example-concept.jpg"
+                            />
+                            <Figure.Caption>
+                            <Row>
+                                <Col>
+                                    <h5>Kabum</h5>
+                                </Col>
+                                <Col>
+                                    ⭐⭐⭐⭐⭐
+                                </Col>
+                                </Row>
+                                <p>R$ X Bilhões</p>
+                                Nulla vitae elit libero, a pharetra augue mollis interdum.
+                            </Figure.Caption>
+                        </Figure>
+                    </Col>
+                </Row>
+                
             </Container>
         </>
     )
