@@ -14,6 +14,7 @@ function Product() {
         <>
 
             <Container fluid>
+                <h1>Produtos</h1>
                 <Row className="justify-content-md-center">
                     <Col>
                         <Figure>
