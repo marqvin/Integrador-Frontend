@@ -1,8 +1,14 @@
 import Carousel from 'react-bootstrap/Carousel';
+import Button from 'react-bootstrap/Button';
 
 function Home() {
     return (
         <>
+           <div className='p-5  d-flex row justify-content-center'>
+             <h1 className='text-center text-primary'>Os melhores ecommerces <p>estão aqui.</p></h1>
+             <h4 className='text-center text-muted'>Temos diversos seguimentos de negócio para você <p>desde varejo até drop shipping.</p></h4>
+             <Button variant="warning text-light col-2">ver mais</Button>{/*esse botão levará para todos produtos*/}
+            </div>
             
             <div className="container w-50 p-6">
                 <div className="col-xs-3">
