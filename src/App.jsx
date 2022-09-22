@@ -5,6 +5,7 @@ import ShoppingCart from './pages/ShoppingCart'
 import Product from './pages/Product'
 
 import Nav from './components/Nav'
+import Footer from './components/Footer'
 
 import {Routes, Route} from 'react-router-dom'
 function App() {
@@ -21,7 +22,8 @@ function App() {
         <Route path='/product' element={<Product />}/>
         <Route path='/shoppingcart' element={<ShoppingCart />}/>
       </Routes>
-    
+
+      <Footer/>
     </>
   )
 }
