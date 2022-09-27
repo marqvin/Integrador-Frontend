@@ -67,17 +67,6 @@ function Carrossel() {
             <Carousel.Item>
                 <img
                     className="d-block w-75 "
-                    src="https://avatars.githubusercontent.com/u/99191311?v=4"
-                    alt="João Victor"
-                />
-                <Carousel.Caption>
-                    <h3>João Victor</h3>
-                    <p>Developer FrontEnd</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-75 "
                     src="https://avatars.githubusercontent.com/u/44385434?v=4"
                     alt="Jade"
                 />
