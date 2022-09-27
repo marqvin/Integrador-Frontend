@@ -24,11 +24,8 @@ function App() {
         <Route path='/shoppingcart' element={<ShoppingCart />}/>
         <Route path='/ProductDetails' element={<ProductDetails />}/>
       </Routes>
-<<<<<<< HEAD
 
       <Footer/>
-=======
->>>>>>> b3657df88a2d29780186f93c246f32e5258b18db
     </>
     
   )
