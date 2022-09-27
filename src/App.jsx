@@ -7,6 +7,7 @@ import Product from './pages/Product'
 import Nav from './components/Nav'
 
 import {Routes, Route} from 'react-router-dom'
+import ProductDetails from './pages/ProductDetails'
 function App() {
 
 
@@ -20,6 +21,7 @@ function App() {
         <Route path='/management' element={<Management />}/>
         <Route path='/product' element={<Product />}/>
         <Route path='/shoppingcart' element={<ShoppingCart />}/>
+        <Route path='/ProductDetails' element={<ProductDetails />}/>
       </Routes>
     
     </>
