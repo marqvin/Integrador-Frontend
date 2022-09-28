@@ -30,10 +30,7 @@ function Product() {
             <Container fluid>
                 <h1>Produtos</h1>
                 <Row className="justify-content-md-center">
-                    
-                    
                     {produtos.map(produtos => <Card titulo={produtos.title} id={produtos.id} image={produtos.image} description={produtos.description} price={produtos.price} />)}
-
                 </Row>
                 
             </Container>
