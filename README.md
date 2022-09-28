@@ -40,8 +40,8 @@ Para rodar o projeto localmente, execute o comando abaixo:
 ```
 npm run dev
 ```
-No terminal aparecerá algo como:
-<img src=".\src\images\localmente.png">
+No terminal aparecerá algo como: </br></br>
+<img src=".\src\images\localmente.png"></br>
 Agora use ```Ctrl + click``` sobre a linha azul e esse comando abrirá uma janela em seu navegador
 
 
