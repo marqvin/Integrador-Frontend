@@ -9,14 +9,18 @@ import Footer from './components/Footer'
 
 import { Routes, Route } from 'react-router-dom'
 import ProductDetails from './pages/ProductDetails'
+import { useState } from 'react'
 
-import { DataProvider } from './components/Context';
+import Context from './components/Context'
+
 function App() {
 
+  const [product,setProduct]=useState([]);
 
   return (
     <>
-      <DataProvider>
+      <Context.Provider value={[product, setProduct]}>
+
         <Nav />
 
         <Routes>
@@ -30,8 +34,9 @@ function App() {
         </Routes>
 
         <Footer />
+      </Context.Provider>
 
-      </DataProvider>
+      
 
     </>
 
