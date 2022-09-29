@@ -20,7 +20,7 @@ function Home() {
 
                         <Carousel.Item>
                             <img
-                                className="d-block w-100"
+                                className="d-block w-100 h-50"
                                 src={CasasBahiaImage}
                                 alt="Casas Bahia"
                             />
@@ -37,7 +37,7 @@ function Home() {
 
                         <Carousel.Item>
                             <img
-                                className="d-block w-100"
+                                className=" w-100"
                                 src={MercadoLivreImage}
                                 alt="Mercado livre"
                             />
