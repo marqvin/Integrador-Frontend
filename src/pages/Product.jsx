@@ -20,6 +20,7 @@ function Product() {
         .then((response)=>{
             response.json().then((date)=>{
                 setProdutos(date)
+                
             })
         })
     })
@@ -31,7 +32,8 @@ function Product() {
                 <h1>Produtos</h1>
                 
                 <MDBRow>
-            {produtos.map(produtos => <Card titulo={produtos.title} id={produtos.id} image={produtos.image}  price={produtos.price} />)}
+                 {produtos.filter(produto => produto.id > 2)
+                 .map(produto => <Card titulo={produto.title} id={produto.id} image={produto.image}  price={produto.price} />)}
                 
                 </MDBRow>
             </Container>

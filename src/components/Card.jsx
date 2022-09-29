@@ -21,6 +21,8 @@ export default function Card({titulo,id,image,price}){
                                 height={264.6}
                                 alt="171x180"
                                 src={image}
+                                
+                                
                             />
                             <Figure.Caption>
                                 <Row>
@@ -31,7 +33,7 @@ export default function Card({titulo,id,image,price}){
                                     ⭐⭐⭐⭐⭐
                                 </Col>
                                 </Row>
-                                <p>R$ {price} Bilhões</p>
+                                <p>R$ <strong>{price}</strong> Bilhões</p>
                                 
 
                                 

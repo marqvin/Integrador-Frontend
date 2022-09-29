@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+
 import { MDBBtn, MDBCol, MDBContainer, MDBFooter, MDBIcon, MDBInput, MDBRow } from 'mdb-react-ui-kit';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -6,70 +6,34 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useParams } from 'react-router-dom';
 import Figure from 'react-bootstrap/Figure';
 
 
 function ProductDetails(){
 
-    const { ID } = useParams();
+  const { id } = useParams();
+  const [produto,setProduto]=useState([]);
 
-    const [produtos,setProdutos]=useState([]);
-
-    useEffect(()=>{
-        fetch(`http://13.57.17.108:8081/produtos${ID}`)
-        .then((response)=>{
-            response.json().then((date)=>{
-                setProdutos(date)
-            })
+  useEffect(()=>{
+    fetch(`http://13.57.17.108:8081/produtos/${id}`)
+      .then((response)=>{
+          response.json().then((date)=>{
+          setProduto(date)
         })
+      })
     })
 
-    return(
-        <>
-            {/* * json place holder
-
-            <p>Detalhes da publicação ded id: 
-                <strong>id:{produtos.id}</strong>
-            </p> */}
-
-            
-                
-{/* <div class="col-md-8">
-      <div class="card-body">
-        
-        <h1>teste</h1>
-        
-      </div>
-</div>
-<div class=" mb-3" >
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img
-        src="https://st.depositphotos.com/2935381/4189/i/450/depositphotos_41897159-stock-photo-example-concept.jpg"
-        alt="Trendy Pants and Shoes"
-        class="img-fluid rounded-start"
-      />
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        
-        <p class="card-text">
-          This is a wider card with supporting text below as a natural lead-in to
-          additional content. This content is a little bit longer.
-        </p>
-        
-      </div>
-    </div>
-  </div>
-</div> */}
-
+  return(
+    <>     
+      
       <Container>
 
         {/**titulo do produto */}
+       
         <Col className="d-flex justify-content-evenly pt-3">
           <h1>
-            test
+         {produto.title}
           </h1>
         </Col>
         {/**caixa com imagem e texto */}
@@ -81,8 +45,8 @@ function ProductDetails(){
             }
             <Figure>
               <Figure.Image 
-              src="https://st.depositphotos.com/2935381/4189/i/450/depositphotos_41897159-stock-photo-example-concept.jpg"
-              alt="Trendy Pants and Shoes"
+              src={produto.image}
+              alt="imagem produto"
               height={250}>
 
               </Figure.Image>
@@ -91,20 +55,15 @@ function ProductDetails(){
             
             </Col>
 
-            {
-              //texto
-            }
+            {/*texto*/}
             <Col className="pt-2">
             
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magnam, sequi provident voluptatibus molestias, quam aspernatur rerum, sint explicabo dolor odio! Velit placeat vitae odio dolor beatae quo temporibus delectus.
-             
-            </p>
+             <p>{produto.description}</p>
               {
                 //preço com a letra azul
               }
               <Col className="d-flex justify-content-evenly pt-4 ">
-                <h3 className="text-primary">preço</h3>
+                <h3 className="text-primary">R${produto.price} bilhões</h3>
               </Col>
             </Col>
           </MDBRow>
@@ -114,12 +73,12 @@ function ProductDetails(){
             <Row>
               <Col>
                 <Button>
-                    botão azul
+                    carrinho
                 </Button>
               </Col>
               <Col>
               <Button>
-                    botão azul
+                    comprar
               </Button>
               </Col>
             </Row>
@@ -130,7 +89,7 @@ function ProductDetails(){
                             
                 
             
-        </>
-    )
+    </>
+  )
 }
 export default ProductDetails
