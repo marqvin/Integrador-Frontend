@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Figure from 'react-bootstrap/Figure';
+import { MDBBtn, MDBCol, MDBContainer, MDBFooter, MDBIcon, MDBInput, MDBRow } from 'mdb-react-ui-kit';
 
 
 import Card from "../components/Card"
@@ -26,12 +27,13 @@ function Product() {
     return (
         <>
 
-            <Container fluid>
+            <Container>
                 <h1>Produtos</h1>
-                <Row className="justify-content-md-center">
-                    {produtos.map(produtos => <Card titulo={produtos.title} id={produtos.id} image={produtos.image} description={produtos.description} price={produtos.price} />)}
-                </Row>
                 
+                <MDBRow>
+            {produtos.map(produtos => <Card titulo={produtos.title} id={produtos.id} image={produtos.image}  price={produtos.price} />)}
+                
+                </MDBRow>
             </Container>
         </>
     )
