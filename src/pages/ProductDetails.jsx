@@ -47,7 +47,8 @@ function ProductDetails(){
               <Figure.Image 
               src={produto.image}
               alt="imagem produto"
-              height={250}>
+              height={250}
+              width={500}>
 
               </Figure.Image>
             </Figure>
@@ -65,30 +66,24 @@ function ProductDetails(){
               <Col className="d-flex justify-content-evenly pt-4 ">
                 <h3 className="text-primary">R${produto.price} bilhões</h3>
               </Col>
-            </Col>
-          </MDBRow>
-          
-        </Col>
-        <Col className="d-flex justify-content-center">
-            <Row>
-              <Col>
+              <Row>
                 <Button>
-                    carrinho
+                    Add ao Carrinho
                 </Button>
-              </Col>
-              <Col>
-              <Button>
-                    comprar
-              </Button>
-              </Col>
-            </Row>
+              </Row>
+              <br/>
+              <Row>
+                <Button>
+                    Comprar
+                </Button>
+                
+              </Row>
+              <br/> <br/>
+            </Col>
+          </MDBRow>       
         </Col>
-
       </Container>
-                
-                            
-                
-            
+
     </>
   )
 }

@@ -7,6 +7,7 @@ function AboutUs() {
             <div className="container w-50 p-6">
                 <div className="col-xs-3">
                     <Carousel/>
+                    <br/> <br/>
                 </div>
             </div>
         </>
