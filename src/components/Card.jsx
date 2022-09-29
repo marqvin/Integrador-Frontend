@@ -4,12 +4,13 @@ import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
 import Figure from 'react-bootstrap/Figure';
 
-export default function Card({title,id,image,description,price}){
+export default function Card({titulo,id,image,price}){
     
     return(
         <>
         
-        <Col>
+
+        <Col className="col-3">
 
         <Link
         to={`/ProductDetails/${id}`}
@@ -24,7 +25,7 @@ export default function Card({title,id,image,description,price}){
                             <Figure.Caption>
                                 <Row>
                                 <Col>
-                                    <h5>{title}</h5>
+                                    <h5>{titulo}</h5>
                                 </Col>
                                 <Col>
                                     ⭐⭐⭐⭐⭐
@@ -33,12 +34,13 @@ export default function Card({title,id,image,description,price}){
                                 <p>R$ {price} Bilhões</p>
                                 
 
-                                {description}
+                                
                             </Figure.Caption>
                         </Figure>
         </Link>
 
         </Col>
+        
         </>
     );
 }
