@@ -4,8 +4,8 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Accordion from 'react-bootstrap/Accordion';
-import {useState } from 'react';
-import { useContext, useEffect } from "react";
+import { useState, useEffect } from 'react';
+
 import Card from "../components/Card"
 
 
@@ -19,15 +19,16 @@ import Card from "../components/Card"
 //           }
 //     }
 //     }, [anime])
-    
+
 function ShoppingCart() {
-    const [carrinho,setCarrinho]=useState([]);
-    
-    useEffect(()=>{
-        
-        setCarrinho(JSON.parse(localStorage.getItem("carrinho")))
+    const [carrinho, setCarrinho] = useState([]);
+
+    useEffect(() => {
+        if(localStorage.getItem("carrinho") != null){
+            setCarrinho(JSON.parse(localStorage.getItem("carrinho")))
+        }
     })
-    
+console.log(carrinho)
     return (
         <>
             <Container>
@@ -36,7 +37,7 @@ function ShoppingCart() {
                 <Row>
                     {/** Produtos add carrinho */}
                     <Col>
-                        {carrinho.map(produto=><Card titulo={produto.title} id={produto.id} image={produto.image} price={produto.price} />)}
+                        {carrinho.map(produto => <Card key={produto.id} titulo={produto.title} id={produto.id} image={produto.image} price={produto.price} />)}
                         Not ready to checkout? Continue Shopping
                     </Col>
 
@@ -54,12 +55,12 @@ function ShoppingCart() {
                                 $12,6  Bilhões
                             </Col>
                             <Button variant="primary" type="submit">
-                            Finalizar Compra
-                        </Button>
+                                Finalizar Compra
+                            </Button>
                         </Row>
-                        
+
                     </Col>
-                    
+
                 </Row>
 
                 {/** Informações do pedido */}

@@ -26,7 +26,7 @@ function Product() {
 
                 <MDBRow>
                     {produtos.filter(produto => produto.id > 2)
-                        .map(produto => <Card titulo={produto.title} id={produto.id} image={produto.image} price={produto.price} />)}
+                        .map(produto => <Card key={produto.id} titulo={produto.title} id={produto.id} image={produto.image} price={produto.price} />)}
 
                 </MDBRow>
             </Container>

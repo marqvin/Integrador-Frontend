@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 import { Routes, Route } from 'react-router-dom'
 import ProductDetails from './pages/ProductDetails'
 
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Context from './components/Context'
 
 function App() {
