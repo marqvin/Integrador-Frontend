@@ -3,63 +3,61 @@ import { MDBBtn, MDBCol, MDBContainer, MDBFooter, MDBIcon, MDBInput, MDBRow } fr
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useEffect, useState } from 'react';
-import { Link,useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Figure from 'react-bootstrap/Figure';
 
-
-function ProductDetails(){
+function ProductDetails() {
 
   const { id } = useParams();
-  const [produto,setProduto]=useState([]);
+  const [produto, setProduto] = useState([]);
 
-  useEffect(()=>{
+  useEffect(() => {
     fetch(`http://13.57.17.108:8081/produtos/${id}`)
-      .then((response)=>{
-          response.json().then((date)=>{
+      .then((response) => {
+        response.json().then((date) => {
           setProduto(date)
         })
       })
-    })
+  })
 
-  return(
-    <>     
-      
+  return (
+    <>
+
       <Container>
 
         {/**titulo do produto */}
-       
+
         <Col className="d-flex justify-content-evenly pt-3">
           <h1>
-         {produto.title}
+            {produto.title}
           </h1>
         </Col>
         {/**caixa com imagem e texto */}
         <Col>
           <MDBRow>
             <Col>
-            {
-              //imagem
-            }
-            <Figure>
-              <Figure.Image 
-              src={produto.image}
-              alt="imagem produto"
-              height={250}
-              width={500}>
+              {
+                //imagem
+              }
+              <Figure>
+                <Figure.Image
+                  src={produto.image}
+                  alt="imagem produto"
+                  height={250}
+                  width={500}>
 
-              </Figure.Image>
-            </Figure>
-            
-            
+                </Figure.Image>
+              </Figure>
+
+
             </Col>
 
             {/*texto*/}
             <Col className="pt-2">
-            
-             <p>{produto.description}</p>
+
+              <p>{produto.description}</p>
               {
                 //preço com a letra azul
               }
@@ -67,20 +65,20 @@ function ProductDetails(){
                 <h3 className="text-primary">R${produto.price} bilhões</h3>
               </Col>
               <Row>
-                <Button>
-                    Add ao Carrinho
+                <Button onClick="">
+                  Add ao Carrinho
                 </Button>
               </Row>
-              <br/>
+              <br />
               <Row>
                 <Button>
-                    Comprar
+                  Comprar
                 </Button>
-                
+
               </Row>
-              <br/> <br/>
+              <br /> <br />
             </Col>
-          </MDBRow>       
+          </MDBRow>
         </Col>
       </Container>
 

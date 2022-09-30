@@ -5,6 +5,8 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Accordion from 'react-bootstrap/Accordion';
 
+import { useContext, useEffect } from "react";
+
 
 function ShoppingCart() {
     return (
@@ -16,7 +18,6 @@ function ShoppingCart() {
                     {/** Produtos add carrinho */}
                     <Col>
                         <Row>
-
                         </Row>
                         <Row>
 
