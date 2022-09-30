@@ -7,7 +7,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import { useState, useEffect } from 'react';
 
 import Card from "../components/Card"
-
+import CardShoppingCart from "../components/CardShoppingCart"
 
 // useEffect(() => {
 //     if(anime){
@@ -27,8 +27,11 @@ function ShoppingCart() {
         if(localStorage.getItem("carrinho") != null){
             setCarrinho(JSON.parse(localStorage.getItem("carrinho")))
         }
-    })
-console.log(carrinho)
+    },
+    [
+        
+    ]
+    )
     return (
         <>
             <Container>
@@ -37,7 +40,7 @@ console.log(carrinho)
                 <Row>
                     {/** Produtos add carrinho */}
                     <Col>
-                        {carrinho.map(produto => <Card key={produto.id} titulo={produto.title} id={produto.id} image={produto.image} price={produto.price} />)}
+                        {carrinho.map(produto => <CardShoppingCart key={produto.id} titulo={produto.title} id={produto.id} image={produto.image} price={produto.price} />)}
                         Not ready to checkout? Continue Shopping
                     </Col>
 
@@ -115,6 +118,7 @@ console.log(carrinho)
                     </Col>
                 </Row>
             </Container>
+            <br/>
 
         </>
     )
