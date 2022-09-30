@@ -7,6 +7,7 @@ import { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Figure from 'react-bootstrap/Figure';
 import { MDBBtn, MDBCol, MDBContainer, MDBFooter, MDBIcon, MDBInput, MDBRow } from 'mdb-react-ui-kit';
+
 import Context from '../components/Context';
 //shift alt f>>>>> arruma a identação
 import Card from "../components/Card"
