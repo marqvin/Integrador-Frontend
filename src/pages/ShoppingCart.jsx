@@ -4,11 +4,30 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Accordion from 'react-bootstrap/Accordion';
-
+import {useState } from 'react';
 import { useContext, useEffect } from "react";
+import Card from "../components/Card"
 
 
+// useEffect(() => {
+//     if(anime){
+//         setGeneros(anime.genero.split(","));
+//         if (generos.length > 3) {
+//             while (generos.length > 3) {
+//               generos.pop();
+//             }
+//           }
+//     }
+//     }, [anime])
+    
 function ShoppingCart() {
+    const [carrinho,setCarrinho]=useState([]);
+    
+    useEffect(()=>{
+        
+        setCarrinho(JSON.parse(localStorage.getItem("carrinho")))
+    })
+    
     return (
         <>
             <Container>
@@ -17,11 +36,7 @@ function ShoppingCart() {
                 <Row>
                     {/** Produtos add carrinho */}
                     <Col>
-                        <Row>
-                        </Row>
-                        <Row>
-
-                        </Row>
+                        {carrinho.map(produto=><Card titulo={produto.title} id={produto.id} image={produto.image} price={produto.price} />)}
                         Not ready to checkout? Continue Shopping
                     </Col>
 

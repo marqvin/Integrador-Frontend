@@ -10,6 +10,26 @@ import Figure from 'react-bootstrap/Figure';
 
 function ProductDetails() {
 
+  //localStorage.clear()
+
+
+  function addNoLocal(obj){
+    if(localStorage.getItem('carrinho') === null){
+
+      localStorage.setItem("carrinho",JSON.stringify([obj]) );
+    }else {
+     
+      localStorage.setItem(
+        'carrinho',JSON.stringify([
+          ...JSON.parse(localStorage.getItem('carrinho')),
+          obj
+        ])
+      );
+    }
+  }
+
+  
+
   const { id } = useParams();
   const [produto, setProduto] = useState([]);
 
@@ -69,11 +89,13 @@ function ProductDetails() {
                 <h3 className="text-primary">R${produto.price} bilhões</h3>
               </Col>
               <Row>
-                <Button onClick={()=>{
+
+              <Button onClick={()=>{
                   addNoLocal(produto)
                 }}>
                   Add ao Carrinho
                 </Button>
+
               </Row>
               <br />
               <Row>
