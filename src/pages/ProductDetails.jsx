@@ -22,6 +22,10 @@ function ProductDetails() {
       })
   })
 
+  function addNoLocal(obj){
+    localStorage.setItem("carrinho",JSON.stringify(obj) );
+  }
+
   return (
     <>
 
@@ -65,7 +69,9 @@ function ProductDetails() {
                 <h3 className="text-primary">R${produto.price} bilhões</h3>
               </Col>
               <Row>
-                <Button onClick="">
+                <Button onClick={()=>{
+                  addNoLocal(produto)
+                }}>
                   Add ao Carrinho
                 </Button>
               </Row>
