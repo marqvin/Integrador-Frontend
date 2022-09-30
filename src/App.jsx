@@ -10,13 +10,11 @@ import Footer from './components/Footer'
 import { Routes, Route } from 'react-router-dom'
 import ProductDetails from './pages/ProductDetails'
 
-import { DataProvider } from './components/Context';
 function App() {
 
 
   return (
     <>
-      <DataProvider>
         <Nav />
 
         <Routes>
@@ -30,8 +28,6 @@ function App() {
         </Routes>
 
         <Footer />
-
-      </DataProvider>
 
     </>
 
