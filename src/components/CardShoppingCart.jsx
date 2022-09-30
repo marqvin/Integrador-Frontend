@@ -12,7 +12,7 @@ function CardShoppingCart({titulo,id,image,price}) {
         console.log(listaAtualizada, id)
 
         localStorage.setItem("carrinho", JSON.stringify(listaAtualizada))
-        
+        window.location.reload();
     }
     return (
         <>

@@ -23,13 +23,18 @@ import CardShoppingCart from "../components/CardShoppingCart"
 function ShoppingCart() {
     const [carrinho, setCarrinho] = useState([]);
 
+    function removeTudoNoLocal(){
+        localStorage.clear()
+        window.location.reload();
+    }
+
     useEffect(() => {
         if(localStorage.getItem("carrinho") != null){
             setCarrinho(JSON.parse(localStorage.getItem("carrinho")))
         }
     },
     [
-        
+
     ]
     )
     return (
@@ -41,7 +46,11 @@ function ShoppingCart() {
                     {/** Produtos add carrinho */}
                     <Col>
                         {carrinho.map(produto => <CardShoppingCart key={produto.id} titulo={produto.title} id={produto.id} image={produto.image} price={produto.price} />)}
-                        Not ready to checkout? Continue Shopping
+                        <Button onClick={()=>
+                            removeTudoNoLocal()
+                        }>
+                            Remover Tudo
+                        </Button>
                     </Col>
 
 
