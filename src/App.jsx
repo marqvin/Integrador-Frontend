@@ -29,8 +29,6 @@ function App() {
 
   return (
     <>
-      <Context.Provider value={[product, setProduct]}>
-
         <Nav />
 
         <Routes>
@@ -44,9 +42,6 @@ function App() {
         </Routes>
 
         <Footer />
-      </Context.Provider>
-
-      
 
     </>
 
